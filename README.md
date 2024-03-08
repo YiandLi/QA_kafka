@@ -22,6 +22,20 @@
    2. 切分用户回复 -> `user_response`
    3. 从 db 中检索得到相关文本 -> `docs`
    4. 组织 context，使用 llm 判别：`llama.cpp` + `"qwen1_5-4b-chat-q6_k.gguf"`
+      	prompt 为：
+      ```python
+       messages = [
+        {"role": "system",
+         "content": f"For this task, you're going to evaluate a user's response to a computer science interview question. "
+                    "\nYour evaluation should be based solely on the provided context. "
+                    "If the response is correct, provide 'right' as the value, if it's incorrect, provide 'wrong', "
+                    "and if you're unable to make a decision, provide 'don't know'."
+                    " Remember, your assessment should be based only on the given context and only from right / wrong / don't know."
+                    f"\n\ncontext : {context}" \
+                    f"\n\nquestion : {question}"},
+        {"role": "user", "content": answer}
+    ]
+      ```
 
 速度：
 ```text
