@@ -31,16 +31,19 @@ llama_print_timings:       total time =   29713.67 ms /   343 tokens
 # =========================================================================================================================
 question: 
 	What is the difference between Event Time and Processing Time in the context of Kafka?
+
 user repsonse chunk: 
 	Event Time: Refers to the time at which an event actually occurred or was generated.
     Event Time: Typically associated with the timestamp embedded within the data of each event.
+
 context retrieved: 
 	Topic: Stream Processing What Is Stream Processing?
-It is worth noting that neither the definition of event streams nor the attributes we later listed say anything about the data contained in the events or the number of events per second. The data differs from system to system — events can be tiny (sometimes only a few bytes) or very large (XML messages with many headers); they can also be completely unstructured, key-value pairs, semi-structured JSON, or structured Avro or Protobuf messages. While it is often assumed that data streams are “big data” and involve millions of events per second, the same techniques we’ll discuss apply equally well (and often better) to smaller streams of events with only a few events per second or minute.
-Topic: Stream Processing Stream-Processing Concepts Time
-Stream-processing systems typically refer to the following notions of time:
-Topic: Stream Processing What Is Stream Processing?
-Let’s start at the beginning: What is a data stream (also called an event stream or streaming data)? First and foremost, a data stream is an abstraction representing an unbounded dataset. Unbounded means infinite and ever growing. The dataset is unbounded because over time, new records keep arriving. This definition is used by Google, Amazon, and pretty much everyone else.
+	It is worth noting that neither the definition of event streams nor the attributes we later listed say anything about the data contained in the events or the number of events per second. The data differs from system to system — events can be tiny (sometimes only a few bytes) or very large (XML messages with many headers); they can also be completely unstructured, key-value pairs, semi-structured JSON, or structured Avro or Protobuf messages. While it is often assumed that data streams are “big data” and involve millions of events per second, the same techniques we’ll discuss apply equally well (and often better) to smaller streams of events with only a few events per second or minute.
+	Topic: Stream Processing Stream-Processing Concepts Time
+	Stream-processing systems typically refer to the following notions of time:
+	Topic: Stream Processing What Is Stream Processing?
+	Let’s start at the beginning: What is a data stream (also called an event stream or streaming data)? First and foremost, a data stream is an abstraction representing an unbounded dataset. Unbounded means infinite and ever growing. The dataset is unbounded because over time, new records keep arriving. This definition is used by Google, Amazon, and pretty much everyone else.
+
 Answer: 
 	right
 ```
