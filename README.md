@@ -21,14 +21,16 @@ Format Transfer : https://cloudconvert.com/pdf-to-doc
    3. 从 db 中检索得到相关文本 -> `docs`
    4. 组织 context，使用 llm 判别：`llama.cpp` + `"qwen1_5-4b-chat-q6_k.gguf"`
 
+速度：
 ```text
 llama_print_timings:        load time =   33183.27 ms
 llama_print_timings:      sample time =       1.06 ms /     2 runs   (    0.53 ms per token,  1890.36 tokens per second)
 llama_print_timings: prompt eval time =   27894.66 ms /   342 tokens (   81.56 ms per token,    12.26 tokens per second)
 llama_print_timings:        eval time =    1778.37 ms /     1 runs   ( 1778.37 ms per token,     0.56 tokens per second)
 llama_print_timings:       total time =   29713.67 ms /   343 tokens
-
-# =========================================================================================================================
+```
+流程输出：
+```
 question: 
 	What is the difference between Event Time and Processing Time in the context of Kafka?
 
