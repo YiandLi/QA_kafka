@@ -1,11 +1,13 @@
 ### Step1 : Get DATA
 
-Download : https://dokumen.pub/qdownload
-Format Transfer : https://cloudconvert.com/pdf-to-doc
+- Download : https://dokumen.pub/qdownload
+- Format Transfer : https://cloudconvert.com/pdf-to-doc
+
 采集的数据见 `epubs` ，最终处理后的版本为 `.json` 文件
 
+<span style="color:red">难点：如何收集，解析数据，整理数据 ？ 数据质量决定了检索。</span>
 
-难点：如何收集数据
+
 
 
 
